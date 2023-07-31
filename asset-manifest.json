@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/tea-react-app/static/js/main.86076ce3.js",
+    "main.js": "/tea-react-app/static/js/main.3256d02f.js",
     "index.html": "/tea-react-app/index.html",
-    "main.86076ce3.js.map": "/tea-react-app/static/js/main.86076ce3.js.map"
+    "main.3256d02f.js.map": "/tea-react-app/static/js/main.3256d02f.js.map"
   },
   "entrypoints": [
-    "static/js/main.86076ce3.js"
+    "static/js/main.3256d02f.js"
   ]
 }
