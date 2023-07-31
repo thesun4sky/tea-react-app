@@ -4,9 +4,7 @@ import React, { useState } from 'react';
 
 const MemberSignUp = () => {
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
+        username: '',
         password: '',
     });
 
@@ -22,7 +20,7 @@ const MemberSignUp = () => {
         e.preventDefault();
 
         // Replace 'YOUR_API_ENDPOINT' with the actual API endpoint for member registration
-        const response = await fetch('YOUR_API_ENDPOINT', {
+        const response = await fetch('http://localhost:8080/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,29 +42,11 @@ const MemberSignUp = () => {
             <h2>Member Sign Up</h2>
             <form onSubmit={handleSubmit}>
                 <label>
-                    First Name:
+                    Username:
                     <input
                         type="text"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                    />
-                </label>
-                <label>
-                    Last Name:
-                    <input
-                        type="text"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                    />
-                </label>
-                <label>
-                    Email:
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
+                        name="username"
+                        value={formData.username}
                         onChange={handleChange}
                     />
                 </label>
